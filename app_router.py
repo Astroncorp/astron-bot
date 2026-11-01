@@ -88,7 +88,7 @@ async def send_post(payload: PostSchema, request: Request) -> dict:
 
     try:
         message = await bot.send_message(
-            chat_id="@tarix_repetitor_astron",
+            chat_id="@astron_onlayn_test",
             text=payload.content,
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=reply_markup,
