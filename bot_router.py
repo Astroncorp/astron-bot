@@ -45,7 +45,7 @@ async def command_start_handler(message: Message):
     builder.add(
         InlineKeyboardButton(
             text="Telegram kanalga a'zo bo'lish",
-            url="https://t.me/tarix_repetitor_astron",
+            url="https://t.me/astron_onlayn_test",
         )
     )
     builder.add(
