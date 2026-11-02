@@ -56,12 +56,15 @@ async def command_start_handler(message: Message):
         photo=photo,
         caption="""Assalomu aleykum!!!
 
-"ASTRON - onlayn repetitor" loyihasining ilovasiga xush kelibsiz!!!
+"ASTRON" loyihasining ilovasiga xush kelibsiz!!!
 
-⚜️Tarix fanidan bizda mavjud:
-- Yangi testlar
-- Bepul savol-javoblar
-- Mavzulashgan qo'llanmalar
+⚜️Bizda quyidagi fanlardan bepul testlar mavjud:
+- Tarix
+- Ingliz tili
+- Biologiya
+- Matematika
+- Fizika
+- Ona tili
 
 📲 Murojaat uchun: @astron_corp
 
