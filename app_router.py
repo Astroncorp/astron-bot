@@ -73,7 +73,7 @@ async def send_message(
 async def send_post(payload: PostSchema, request: Request) -> dict:
     bot: Bot = request.app.state.bot
 
-    button_url = "https://t.me/astrontest_bot?startapp"
+    button_url = "https://t.me/astrontest_bot/astron_test"
 
     reply_markup = InlineKeyboardMarkup(
         inline_keyboard=[
