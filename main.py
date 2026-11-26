@@ -23,8 +23,8 @@ origins = [
 async def bot_on_startup(bot: Bot):
     await bot.set_chat_menu_button(
         menu_button=MenuButtonWebApp(
-            text="Ilovani ochish",
-            web_app=WebAppInfo(url=WEBAPP_URL),
+            text="Ilovaga o'tish",
+            web_app=WebAppInfo(url="https://webapp.astron.uz/channel"),
         )
     )
 
