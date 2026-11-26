@@ -44,14 +44,11 @@ async def command_start_handler(message: Message):
     builder = InlineKeyboardBuilder()
     builder.add(
         InlineKeyboardButton(
-            text="Telegram kanalga a'zo bo'lish",
+            text="Ilovaga o'tish",
             url="https://t.me/astron_onlayn_test",
         )
     )
-    builder.add(
-        InlineKeyboardButton(text="Ilovani ochish", web_app=WebAppInfo(url=WEBAPP_URL))
-    )
-    builder.adjust(1, 1)
+    builder.adjust(1)
     await message.answer_photo(
         photo=photo,
         caption="""Assalomu aleykum!!!
@@ -68,7 +65,7 @@ async def command_start_handler(message: Message):
 
 📲 Murojaat uchun: @astron_corp
 
-📌 Ilovadan foydalanish uchun pastgi chap burchakdagi "Ilovani ochish" tugmasiga bosing.""",
+📌 Ilovadan foydalanish uchun pastgi chap burchakdagi "Ilovaga o'tish" tugmasiga bosing.""",
         reply_markup=builder.as_markup(),
     )
 
