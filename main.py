@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
-from aiogram.types import MenuButtonWebApp, WebAppInfo
+from aiogram.types import MenuButtonCommands, BotCommand
 from decouple import config
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -22,12 +22,12 @@ origins = [
 
 async def bot_on_startup(bot: Bot):
     await bot.set_chat_menu_button(
-        menu_button=MenuButtonWebApp(
-            text="Ilovaga o'tish",
-            web_app=WebAppInfo(url="https://webapp.astron.uz/channel"),
-        )
+        menu_button=MenuButtonCommands()
     )
 
+    await bot.set_my_commands([
+        BotCommand(command="start", description="Start")
+    ])
 
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher()
