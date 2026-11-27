@@ -63,9 +63,7 @@ async def command_start_handler(message: Message):
 - Fizika
 - Ona tili
 
-📲 Murojaat uchun: @astron_corp
-
-📌 Ilovadan foydalanish uchun pastgi chap burchakdagi "Ilovaga o'tish" tugmasiga bosing.""",
+📲 Murojaat uchun: @astron_corp""",
         reply_markup=builder.as_markup(),
     )
 
